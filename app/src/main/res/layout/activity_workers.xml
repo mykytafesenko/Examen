@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lab6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE9516"
+    android:orientation="vertical"
+    android:paddingLeft="64dp"
+    android:paddingTop="16dp"
+    android:paddingRight="64dp"
+    android:paddingBottom="16dp">
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="347dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_worker"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#73FEFEFE"
+            android:fontFamily="serif"
+            android:hint=" enter worker"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/name_worker"
+            android:background="#ffa"
+            android:onClick="add_btn_clicked"
+            android:text="confirm"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/name_worker"
+            android:background="#ffa"
+            android:onClick="back"
+            android:text="back"
+            android:textAllCaps="false" />
+
+
+        <EditText
+            android:id="@+id/salary"
+            android:inputType="number"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/name_worker"
+            android:layout_marginTop="12dp"
+            android:background="#73FFFFFF"
+            android:fontFamily="serif"
+            android:hint="enter salary"
+            android:maxLines="1"
+            android:selectAllOnFocus="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_workers"
+        android:layout_width="347dp"
+        android:layout_height="597dp"
+        android:layout_above="@+id/bar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#74FFFFFF" />
+</RelativeLayout>
